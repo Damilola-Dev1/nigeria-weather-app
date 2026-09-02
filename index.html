@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weather App</title>
+    <!-- 1. Link your CSS file here -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- 2. Main container box centered on screen -->
+    <div class="card">
+      <h1>Weather App</h1>
+
+      <!-- Control group for select dropdown and button -->
+      <div class="controls">
+        <select id="city-select">
+          <option value=""></option>
+          <option value="umuahia">Abia</option>
+          <option value="yola">Adamawa</option>
+          <option value="uyo">Akwa Ibom</option>
+          <option value="awka">Anambra</option>
+          <option value="bauchi">Bauchi</option>
+          <option value="yenagoa">Bayelsa</option>
+          <option value="makurdi">Benue</option>
+          <option value="maiduguri">Borno</option>
+          <option value="calabar">Cross River</option>
+          <option value="asaba">Delta</option>
+          <option value="abakaliki">Ebonyi</option>
+          <option value="benin city">Edo</option>
+          <option value="ado ekiti">Ekiti</option>
+          <option value="enugu">Enugu</option>
+          <option value="gombe">Gombe</option>
+          <option value="owerri">Imo</option>
+          <option value="dutse">Jigawa</option>
+          <option value="kaduna">Kaduna</option>
+          <option value="kano">Kano</option>
+          <option value="katsina">Katsina</option>
+          <option value="birnin kebbi">Kebbi</option>
+          <option value="lokoja">Kogi</option>
+          <option value="ilorin">Kwara</option>
+          <option value="ikeja">Lagos</option>
+          <option value="lafia">Nasarawa</option>
+          <option value="minna">Niger</option>
+          <option value="abeokuta">Ogun</option>
+          <option value="akure">Ondo</option>
+          <option value="osogbo">Osun</option>
+          <option value="ibadan">Oyo</option>
+          <option value="jos">Plateau</option>
+          <option value="port harcourt">Rivers</option>
+          <option value="sokoto">Sokoto</option>
+          <option value="jalingo">Taraba</option>
+          <option value="damaturu">Yobe</option>
+          <option value="gusau">Zamfara</option>
+          <option value="abuja">FCT</option>
+        </select>
+
+        <button id="get-weather-btn">Get Weather</button>
+      </div>
+
+      <!-- Weather info display card -->
+      <div class="weather-info">
+        <h2 id="location"></h2>
+        <p id="weather-main"></p>
+        <img id="weather-icon" alt="weather icon" />
+        <p id="main-temperature"></p>
+        <p id="feels-like"></p>
+        <p id="humidity"></p>
+        <p id="wind"></p>
+        <p id="wind-gust"></p>
+      </div>
+    </div>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

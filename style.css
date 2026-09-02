@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  background: linear-gradient(160deg, #f7fbe8 0%, #e4f5d8 55%, #d3edc2 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 48px 20px;
+  color: #2f3b23;
+}
+
+main {
+  width: 100%;
+  max-width: 480px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.1rem;
+  color: #3b5e1f;
+  margin-bottom: 28px;
+  letter-spacing: 0.5px;
+}
+
+#city-select,
+#get-weather-btn {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #b9d99a;
+  background-color: #ffffff;
+  color: #2f3b23;
+}
+
+#city-select {
+  margin-right: 10px;
+  min-width: 150px;
+  cursor: pointer;
+}
+
+#get-weather-btn {
+  background-color: #cfe86b;
+  border-color: #b9d94f;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+#get-weather-btn:hover {
+  background-color: #bcdb52;
+}
+
+#get-weather-btn:active {
+  transform: scale(0.97);
+}
+
+#weather-display {
+  margin-top: 32px;
+  background-color: #ffffff;
+  border: 1px solid #dcefc4;
+  border-radius: 16px;
+  padding: 32px 24px;
+  box-shadow: 0 10px 24px rgba(120, 150, 60, 0.12);
+}
+
+#location {
+  font-size: 1.6rem;
+  color: #3b5e1f;
+  margin-bottom: 6px;
+}
+
+#weather-main {
+  font-size: 1.05rem;
+  color: #6d8a44;
+  text-transform: capitalize;
+  margin-bottom: 14px;
+}
+
+#weather-icon {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 18px;
+  display: block;
+}
+
+#main-temperature {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #2f3b23;
+  margin-bottom: 4px;
+}
+
+#main-temperature::after {
+  content: " \00B0""C";
+}
+
+#feels-like {
+  font-size: 0.95rem;
+  color: #7a8f63;
+  margin-bottom: 18px;
+}
+
+#feels-like::before {
+  content: "Feels like ";
+}
+
+#feels-like::after {
+  content: "\00B0""C";
+}
+
+#humidity,
+#wind,
+#wind-gust {
+  display: inline-block;
+  font-size: 0.95rem;
+  color: #4a5c38;
+  background-color: #eef8dd;
+  border-radius: 20px;
+  padding: 6px 14px;
+  margin: 4px;
+}
+
+#humidity::before {
+  content: "Humidity: ";
+  font-weight: bold;
+}
+
+#wind::before {
+  content: "Wind: ";
+  font-weight: bold;
+}
+
+#wind-gust::before {
+  content: "Gust: ";
+  font-weight: bold;
+}

@@ -10,6 +10,7 @@ body {
   min-height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 40px 16px;
   color: #223318;
 }
@@ -151,28 +152,49 @@ h1 {
   }
 
   h1 {
-    font-size: 1.6rem;
+    font-size: 1.9rem;
   }
 
   #city-select,
   #get-weather-btn {
     width: 100%;
     margin-right: 0;
+    font-size: 1.1rem;
+    padding: 14px;
   }
 
   #weather-display {
-    padding: 22px 16px;
+    padding: 26px 18px;
+  }
+
+  #location {
+    font-size: 1.7rem;
+  }
+
+  #weather-main {
+    font-size: 1.1rem;
+  }
+
+  #weather-icon {
+    width: 100px;
+    height: 100px;
   }
 
   #main-temperature {
-    font-size: 1.9rem;
+    font-size: 2.6rem;
+  }
+
+  #feels-like {
+    font-size: 1rem;
   }
 
   #humidity,
   #wind,
   #wind-gust {
     display: block;
-    margin: 6px 0;
+    margin: 8px 0;
+    font-size: 1.05rem;
+    padding: 10px 14px;
   }
 }
 

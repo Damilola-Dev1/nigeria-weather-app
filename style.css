@@ -6,12 +6,12 @@
 
 body {
   font-family: Georgia, "Times New Roman", serif;
-  background: linear-gradient(160deg, #f7fbe8 0%, #e4f5d8 55%, #d3edc2 100%);
+  background: linear-gradient(160deg, #eef7d8 0%, #cfe8a8 55%, #a9d17e 100%);
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  padding: 48px 20px;
-  color: #2f3b23;
+  padding: 40px 16px;
+  color: #223318;
 }
 
 main {
@@ -21,9 +21,9 @@ main {
 }
 
 h1 {
-  font-size: 2.1rem;
-  color: #3b5e1f;
-  margin-bottom: 28px;
+  font-size: 2rem;
+  color: #234d1e;
+  margin-bottom: 24px;
   letter-spacing: 0.5px;
 }
 
@@ -33,27 +33,29 @@ h1 {
   font-size: 1rem;
   padding: 10px 14px;
   border-radius: 8px;
-  border: 1px solid #b9d99a;
+  border: 1px solid #9dc26a;
   background-color: #ffffff;
-  color: #2f3b23;
+  color: #223318;
 }
 
 #city-select {
-  margin-right: 10px;
+  margin-right: 8px;
+  margin-bottom: 8px;
   min-width: 150px;
   cursor: pointer;
 }
 
 #get-weather-btn {
-  background-color: #cfe86b;
-  border-color: #b9d94f;
+  background-color: #e6c229;
+  border-color: #cca61f;
+  color: #2b2205;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
 #get-weather-btn:hover {
-  background-color: #bcdb52;
+  background-color: #d1af1f;
 }
 
 #get-weather-btn:active {
@@ -61,38 +63,39 @@ h1 {
 }
 
 #weather-display {
-  margin-top: 32px;
+  margin-top: 28px;
   background-color: #ffffff;
-  border: 1px solid #dcefc4;
+  border: 1px solid #d9edb8;
   border-radius: 16px;
-  padding: 32px 24px;
-  box-shadow: 0 10px 24px rgba(120, 150, 60, 0.12);
+  padding: 28px 20px;
+  box-shadow: 0 10px 24px rgba(45, 80, 20, 0.15);
 }
 
 #location {
-  font-size: 1.6rem;
-  color: #3b5e1f;
+  font-size: 1.5rem;
+  color: #234d1e;
   margin-bottom: 6px;
+  word-wrap: break-word;
 }
 
 #weather-main {
-  font-size: 1.05rem;
-  color: #6d8a44;
+  font-size: 1rem;
+  color: #5c7a3f;
   text-transform: capitalize;
   margin-bottom: 14px;
 }
 
 #weather-icon {
-  width: 90px;
-  height: 90px;
-  margin: 0 auto 18px;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 16px;
   display: block;
 }
 
 #main-temperature {
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   font-weight: bold;
-  color: #2f3b23;
+  color: #1f2e14;
   margin-bottom: 4px;
 }
 
@@ -101,8 +104,8 @@ h1 {
 }
 
 #feels-like {
-  font-size: 0.95rem;
-  color: #7a8f63;
+  font-size: 0.9rem;
+  color: #6f8552;
   margin-bottom: 18px;
 }
 
@@ -118,11 +121,12 @@ h1 {
 #wind,
 #wind-gust {
   display: inline-block;
-  font-size: 0.95rem;
-  color: #4a5c38;
-  background-color: #eef8dd;
+  font-size: 0.9rem;
+  color: #33481f;
+  background-color: #eaf6d5;
+  border: 1px solid #d3e8ad;
   border-radius: 20px;
-  padding: 6px 14px;
+  padding: 6px 12px;
   margin: 4px;
 }
 
@@ -139,4 +143,45 @@ h1 {
 #wind-gust::before {
   content: "Gust: ";
   font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 24px 12px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  #city-select,
+  #get-weather-btn {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  #weather-display {
+    padding: 22px 16px;
+  }
+
+  #main-temperature {
+    font-size: 1.9rem;
+  }
+
+  #humidity,
+  #wind,
+  #wind-gust {
+    display: block;
+    margin: 6px 0;
+  }
+}
+
+@media (max-width: 340px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  #main-temperature {
+    font-size: 1.7rem;
+  }
 }

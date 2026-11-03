@@ -8,7 +8,7 @@ Most weather app tutorials default to a handful of Western cities. I wanted some
 
 Live Demo
 
-[Add your Netlify link here once deployed]
+https://nigeria-weather-app.netlify.app/
 
 What it does
 
